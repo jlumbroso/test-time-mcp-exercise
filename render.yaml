@@ -6,5 +6,5 @@ services:
     name: your-first-instrument
     runtime: python
     plan: free
-    buildCommand: pip install "mcp[cli]"
+    buildCommand: pip install "mcp[cli]>=1.2,<2"  # pinned — see TROUBLESHOOTING.md 2026-09-17
     startCommand: python server.py
